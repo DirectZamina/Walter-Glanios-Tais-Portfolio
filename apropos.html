@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Walter Glanios Taïs – Développeur Web</title>
+</head>
+<body class="dark">
+    <div class="wrapper">
+    <nav>            
+        <a href="index.html"><img src="Images/logo.png" alt="Logo portfolio" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="top-bar">
+            <div class="btn-group">
+                <a href="contact.html">
+                    <button style="margin-right: 50px;">Me contacter <i class="fa-solid fa-envelope"></i></button>
+                </a>
+                
+            </div>
+        </div>
+
+    <main>
+
+        <section id="apropos" class="apropos" data-aos="fade-up">
+            <div class="max-w-4xl mx-auto bg-[#101b33] p-8 rounded-xl shadow-lg border border-gray-600">
+              <h2 class="text-3xl font-bold text-center mb-6">Qui suis-je ?</h2>
+              <p class="text-center text-lg mb-4">
+                Je m'appelle <strong>Walter Glanios Taïs</strong>, étudiant en <span class="text-indigo-400">BTS SIO</span> à Strasbourg, au lycée des métiers René Cassin.
+                Passionné par le développement web et la cybersécurité, je suis curieux et déterminé à apprendre continuellement de nouvelles choses.
+              </p>
+              <p class="text-center text-lg">
+                Ce portfolio reflète ma passion pour le développement, mon parcours, et mes compétences.
+                Mon objectif est de contribuer à des <span class="text-indigo-400">projets concrets</span> tout en continuant à me perfectionner dans le développement fullstack et la sécurité informatique.
+              </p>
+            </div>
+          </section>
+          
+    </main>
+</div>
+    <footer class="footer">
+        <p>© 2025 Walter Glanios Taïs – Portfolio</p>
+        
+    </footer>
+
+    <button class="btn-mode" id="btn" aria-label="Changer le thème">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+</body>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
