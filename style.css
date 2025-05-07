@@ -446,6 +446,7 @@ nav {
     padding: 0 40px; /* marges intérieures */
     height: 80px; /* fixe la hauteur pour l’alignement */
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 nav ul{
