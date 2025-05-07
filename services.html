@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Walter Glanios Taïs – Développeur Web</title>
+</head>
+<body class="dark">
+    <div class="wrapper">
+    <nav>            
+        <a href="index.html"><img src="Images/logo.png" alt="Logo portfolio" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="top-bar">
+            <div class="btn-group">
+                <a href="contact.html">
+                    <button style="margin-right: 50px;">Me contacter <i class="fa-solid fa-envelope"></i></button>
+                </a>
+                
+            </div>
+        </div>
+
+        <main>
+            <section id="services" class="bg-[#0b1320] text-white py-20 px-4">
+                <div class="max-w-6xl mx-auto text-center">
+                  <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Mes Services</h2>
+              
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Service 1 -->
+                    <div class="bg-[#101b33] p-6 rounded-xl shadow-lg border border-gray-600" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="text-4xl text-blue-400 mb-4"><i class="fas fa-code"></i></div>
+                      <h3 class="text-xl font-semibold mb-3">Développement Web</h3>
+                      <p class="text-gray-300">
+                        Création de sites web modernes, responsives et optimisés, que ce soit en front-end ou back-end.
+                      </p>
+                    </div>
+              
+                    <!-- Service 2 -->
+                    <div class="bg-[#101b33] p-6 rounded-xl shadow-lg border border-gray-600" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="text-4xl text-green-400 mb-4"><i class="fas fa-shield-alt"></i></div>
+                      <h3 class="text-xl font-semibold mb-3">Cybersécurité</h3>
+                      <p class="text-gray-300">
+                        Mise en place de bonnes pratiques de sécurité et audit de vulnérabilités pour vos projets.
+                      </p>
+                    </div>
+              
+                    <!-- Service 3 -->
+                    <div class="bg-[#101b33] p-6 rounded-xl shadow-lg border border-gray-600" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-lightbulb"></i></div>
+                      <h3 class="text-xl font-semibold mb-3">Projets sur mesure</h3>
+                      <p class="text-gray-300">
+                        Réalisation de projets personnalisés adaptés à vos besoins avec des technologies modernes.
+                      </p>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+                  
+        </main>
+
+    </div>
+
+<footer class="footer">
+    <p>© 2025 Walter Glanios Taïs – Portfolio</p>
+    
+</footer>
+
+    <button class="btn-mode" id="btn" aria-label="Changer le thème">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+
+</body>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
