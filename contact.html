@@ -1,53 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Portfolio de Walter Glanios Taïs – Développeur Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Contact – Portfolio de Walter Glanios Taïs</title>
+  <style>
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #f8fafc;
+      height: 80px;
+    }
+
+    h1.titreContact {
+      margin-top: 130px;
+      font-size: 2.5em;
+      color: #f8fafc;
+    }
+
+    form {
+      max-width: 95%;
+      width: 800px;
+    }
+
+    @media (max-width: 768px) {
+      form {
+        width: 90%;
+        padding: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        background-color: #f8fafc;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #0f172a;
+        font-size: 24px;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  </style>
 </head>
 <body class="dark">
-    <nav>            
+    <nav>
         <a href="index.html"><img src="Images/logo.png" alt="Logo portfolio" class="logo"></a>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="apropos.html">A propos</a></li>
+      
+        <button class="burger" aria-label="Menu" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+      
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="apropos.html">A propos</a></li>
         </ul>
-    </nav>
-    <button class="btn-mode" id="btn" aria-label="Changer le thème"><i class="fa-solid fa-circle-half-stroke"></i></button>
+      </nav>
 
+  <button class="btn-mode" id="btn" aria-label="Changer le thème">
+    <i class="fa-solid fa-circle-half-stroke"></i>
+  </button>
 
+  <h1 class="titreContact">Contact</h1>
 
-    <h1 class="titreContact">Contact</h1>
+  <section class="contact">
+    <form action="https://formspree.io/f/xnndvjlp" method="POST" data-aos="fade-left">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required autocomplete="off" />
 
-    <section class="contact">
-    <form action="https://formspree.io/f/xnndvjlp" method="post" data-aos="fade-left">
+      <label for="email">Email :</label>
+      <input name="email" id="email" type="email" required autocomplete="off" />
 
-        <label for="name">Nom :</label>
-        <input type="text" id ="name" for="name" required autocomplete = "off">
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-        <label for="email">Email :</label>
-        <input name="Email" id="email" type="email" required autocomplete="off">
+      <button type="submit" style="margin-top: 10px;">Envoyer</button>
+    </form>
+  </section>
 
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
- 
-        <button type="submit" style="margin-top: 10px;">Submit</button>
-      </form>
-    </section>
+  <footer class="footer">
+    <p>© 2025 Walter Glanios Taïs – Portfolio</p>
+  </footer>
 
-      <footer class="footer">
-        <p>© 2025 Walter Glanios Taïs – Portfolio</p>
-        
-    </footer>
-    
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init();
+
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    }
   </script>
   <script src="main.js"></script>
+</body>
 </html>
