@@ -259,6 +259,12 @@ section.competence{
     gap: 30px;
 }
 
+
+body.light #typed-name{
+    color: #2F4F4F;
+}
+
+
 i{
     transition: transform 0.3s ease;
 }
