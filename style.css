@@ -3,12 +3,18 @@ html, body{
     font-family: "Poppins", sans-serif;
     height: 100lvh; /* fallback si pas de dvh */
     height: 100dvh;
+    max-width: 100vw;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     font-size: 1.1em;
     transition: background 0.5s;
+        overflow-x: hidden !important;
+}
+
+* {
+    outline: 1px solid red;
 }
 
 .wrapper{
@@ -23,7 +29,6 @@ main{
 
 body{
     width: 100%;
-    overflow-x: hidden;
 }
 
 body.light {
@@ -127,8 +132,9 @@ button.btn-mode:hover {
 }
 button.btn-mode{
     position: fixed;
-    bottom: 30px;
-    right: 50px;
+    right: 10px;
+    bottom: 20px;
+    max-width: 90vw;
     z-index: 9999;
     border-radius: 50px;
     font-size: 14px;
@@ -358,7 +364,10 @@ form{
     color: white;
     display: flex;
     flex-direction: column;
-    width: 800px;
+    /* width: 800px; */
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -389,6 +398,9 @@ form label, form input{
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
