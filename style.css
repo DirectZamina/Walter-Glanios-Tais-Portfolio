@@ -1,7 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-
 html, body{
     background-color: #0F172A    ;
     font-family: "Poppins", sans-serif;
@@ -9,11 +5,9 @@ html, body{
     margin: 0;
     padding: 0;
     display: flex;
-    overflow-x: hidden !important;
     flex-direction: column;
     font-size: 1.1em;
     transition: background 0.5s;
-    scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -321,7 +315,7 @@ li:hover i {
 }
 
 
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 768px) {
     .competence {
         flex-direction: column;
     }
@@ -401,7 +395,7 @@ form label, form input{
     transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 788px) {
+@media (max-width: 768px) {
     .burger {
         display: block;
     }
@@ -415,8 +409,6 @@ form label, form input{
         width: 100%;
         align-items: center;
         transform: translateY(-150%);
-        width: 100vw;
-        overflow-x: hidden;
     }
 
     .nav-links.active {
@@ -425,8 +417,6 @@ form label, form input{
 
     nav {
         flex-wrap: wrap;
-        overflow-x: hidden;
-        max-width: 100vw;
     }
 
     nav ul li {
@@ -468,10 +458,7 @@ nav {
 nav ul{
     display: flex;
     flex-direction: row;
-    gap: 1.5rem; /* un espacement naturel entre les liens */
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+    margin-left: 150px;
 }
 
 body.dark nav{
@@ -556,7 +543,6 @@ img.logo{
     margin-bottom: 1rem;
   }
   
-
   .offres a{
     text-decoration: none;
     color: white;
