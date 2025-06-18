@@ -541,3 +541,21 @@ img.logo{
     margin-bottom: 1rem;
   }
   
+  .offres a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .offres a:hover{
+    text-decoration: underline;
+  }
+
+  body.light .offres a{
+    text-decoration: none;
+    color: black;
+  }
+
+  body.light .offres a:hover{
+    text-decoration: underline;
+    color: black;
+  }
