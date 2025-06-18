@@ -5,9 +5,11 @@ html, body{
     margin: 0;
     padding: 0;
     display: flex;
+    overflow-x: hidden !important;
     flex-direction: column;
     font-size: 1.1em;
     transition: background 0.5s;
+    scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -315,7 +317,7 @@ li:hover i {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 788px) {
     .competence {
         flex-direction: column;
     }
@@ -395,7 +397,7 @@ form label, form input{
     transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 788px) {
     .burger {
         display: block;
     }
@@ -543,6 +545,7 @@ img.logo{
     margin-bottom: 1rem;
   }
   
+
   .offres a{
     text-decoration: none;
     color: white;
