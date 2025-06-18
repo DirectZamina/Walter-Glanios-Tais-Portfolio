@@ -384,6 +384,8 @@ form label, form input{
     font-size: 28px;
     color: black;
     cursor: pointer;
+    overflow: hidden;
+    max-width: 100%;
     z-index: 1001;
 }
 
